@@ -1,7 +1,8 @@
 clc 
 clear all
 
-disp('your program is starting')
+% 本程序是基本的观点竞争传播的程序，运行本程序可以得到两种观点的接受程度的过程变化数据。
+
 %% 相关系数
 changdu = 500;                                                    %长度
 kuandu = 500;                                                     %宽度
@@ -60,7 +61,8 @@ while oldcbqk ~= newcbqk
     
     count  = count +1;
 end
-jilu
+
+csvwrite('history1.csv',jilu)
 % plot(history1)
 % hold on 
 % plot(history2)
