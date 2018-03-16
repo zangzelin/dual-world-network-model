@@ -53,7 +53,7 @@ for pingjunzhixindu = 0.49:0.001:0.51
         jilu(count,:) = newcbqk;
         % imwrite(PP,[num2str(count),'.jpg']);% 保存图片
         % 模拟传播模型，进行两种观点的传播
-        renjichuanbo2;
+        [net1, net2] = renjichuanbo2(changdu,kuandu,jiaoyoufanwei,frends, pengyoushu, net1,net2,0, 0,zhixinfazhi,zhixindu,0,0);
         % 记录原来的 情况
         oldcbqk = newcbqk;
         % 计算新的情况
